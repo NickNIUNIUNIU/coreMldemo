@@ -17,7 +17,6 @@
 		1FA3891E20108D0C00B97613 /* coreMldemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3891D20108D0C00B97613 /* coreMldemoTests.m */; };
 		1FA3892920108D0C00B97613 /* coreMldemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3892820108D0C00B97613 /* coreMldemoUITests.m */; };
 		1FA3893920108D1900B97613 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3893820108D1900B97613 /* Resnet50.mlmodel */; };
-		1FA3893B20108E4B00B97613 /* WechatIMG12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1FA3893A20108E4B00B97613 /* WechatIMG12.jpeg */; };
 		1FA3893D201093A100B97613 /* Cat03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FA3893C201093A100B97613 /* Cat03.jpg */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		1FA3892820108D0C00B97613 /* coreMldemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreMldemoUITests.m; sourceTree = "<group>"; };
 		1FA3892A20108D0C00B97613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA3893820108D1900B97613 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		1FA3893A20108E4B00B97613 /* WechatIMG12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG12.jpeg; sourceTree = "<group>"; };
 		1FA3893C201093A100B97613 /* Cat03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cat03.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +112,6 @@
 				1FA3893820108D1900B97613 /* Resnet50.mlmodel */,
 				1FA3890420108D0C00B97613 /* ViewController.h */,
 				1FA3890520108D0C00B97613 /* ViewController.m */,
-				1FA3893A20108E4B00B97613 /* WechatIMG12.jpeg */,
 				1FA3893C201093A100B97613 /* Cat03.jpg */,
 				1FA3890720108D0C00B97613 /* Main.storyboard */,
 				1FA3890D20108D0C00B97613 /* Assets.xcassets */,
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA3893B20108E4B00B97613 /* WechatIMG12.jpeg in Resources */,
 				1FA3893D201093A100B97613 /* Cat03.jpg in Resources */,
 				1FA3891120108D0C00B97613 /* LaunchScreen.storyboard in Resources */,
 				1FA3890E20108D0C00B97613 /* Assets.xcassets in Resources */,
@@ -449,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQVG8RYW6T;
 				INFOPLIST_FILE = coreMldemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niuge.coreMldemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQVG8RYW6T;
 				INFOPLIST_FILE = coreMldemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niuge.coreMldemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

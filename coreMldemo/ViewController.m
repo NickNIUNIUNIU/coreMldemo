@@ -24,8 +24,7 @@
 
 @property (nonatomic, strong) VNSequenceRequestHandler * sequenceRequestHandler;
 
-@property (nonatomic, strong) UILabel *label1;
-
+@property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (nonatomic, assign) NSUInteger num;
 @end
 
@@ -106,12 +105,7 @@
         conn.videoOrientation = AVCaptureVideoOrientationPortrait;
         [_session commitConfiguration];
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 44, self.view.bounds.size.width, 44)];
-    label.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.6];
-    label.font = [UIFont systemFontOfSize:24];
-    label.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:label];
-    self.label1 = label;
+    [self.view bringSubviewToFront:self.label1];
     
 }
 
