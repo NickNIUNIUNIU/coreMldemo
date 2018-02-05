@@ -10,6 +10,7 @@
 #import "Resnet50.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Vision/Vision.h>
+#import <Metal/Metal.h>
 
 @interface ViewController ()<AVCaptureVideoDataOutputSampleBufferDelegate>
 @property (nonatomic, strong) AVCaptureDevice *captureDevice;
@@ -35,7 +36,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    
+    self.label1.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
     Resnet50 *model = [[Resnet50 alloc]init];
     
     _captureQueue = dispatch_queue_create("com.wutian.CaptureQueue", DISPATCH_QUEUE_SERIAL);
@@ -100,7 +101,6 @@
         AVCaptureDeviceInput *cameraInput = [AVCaptureDeviceInput deviceInputWithDevice:camera error:NULL];
         _currentInput = cameraInput;
         [_session addInput:cameraInput];
-        
         AVCaptureConnection *conn = [_currentOutput connectionWithMediaType:AVMediaTypeVideo];
         conn.videoOrientation = AVCaptureVideoOrientationPortrait;
         [_session commitConfiguration];
